@@ -12,4 +12,8 @@ font-family: 'Abel', sans-serif;
 border-radius: 5px;
 border: none;
 color: #e4dcf1;
+&:hover{
+    background-color:  #3d1e6d;
+}
+
 `

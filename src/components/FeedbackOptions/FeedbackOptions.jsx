@@ -3,8 +3,11 @@ import { Div, Button } from "./FeedbackOptions.styled";
 import PropTypes from 'prop-types';
 
 class FeedbackOptions extends Component {
+    static defaultProps = {
+        options:[]
+    }
     render(){
-        const {onLeaveFeedback, options=[]} = this.props;
+        const {onLeaveFeedback, options} = this.props;
       return  ( <Div>
         {options.map(el=>(
          <Button type="button" value={el} key={el} onClick={onLeaveFeedback}>{el}</Button>   
